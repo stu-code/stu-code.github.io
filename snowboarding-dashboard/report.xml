@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.50.0" label="Snowboarding" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.37.0" dateCreated="2024-02-09T01:49:40Z" dateModified="2025-04-07T17:34:28Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="2853">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.50.0" label="Snowboarding" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.37.0" dateCreated="2024-02-09T01:49:40Z" dateModified="2025-04-07T17:53:39Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="2892">
 	<Results>
 		<Result ref="dd1899" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="detail" supportsExportDetail="false" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
@@ -192,7 +192,7 @@
 			<Variables>
 				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi1592" varname="bi1592" column="c0"/>
 				<NumericVariable format="F12.1" usage="quantitative" definedAggregation="max" label="Max Speed (mph)" ref="bi2773" varname="bi2773" column="c1"/>
-				<StringVariable label="Mountain" ref="bi2840" varname="bi2840" column="c2"/>
+				<StringVariable label="Mountain" ref="bi2879" varname="bi2879" column="c2"/>
 			</Variables>
 			<Columns>
 				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
@@ -224,8 +224,8 @@
 			<Variables>
 				<NumericVariable format="BEST12." usage="categorical" label="Run" ref="bi310" varname="bi310" column="c0"/>
 				<NumericVariable format="F12.1" usage="quantitative" definedAggregation="max" label="Max Speed (mph)" ref="bi2772" varname="bi2772" column="c1"/>
-				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi2841" varname="bi2841" column="c2"/>
-				<StringVariable label="Mountain" ref="bi2842" varname="bi2842" column="c3"/>
+				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi2880" varname="bi2880" column="c2"/>
+				<StringVariable label="Mountain" ref="bi2881" varname="bi2881" column="c3"/>
 			</Variables>
 			<Columns>
 				<NumericColumn dataType="double" colname="c0" encoding="text"/>
@@ -244,7 +244,7 @@
 		<Result ref="dd2059" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
 				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi2077" varname="bi2077" column="c0"/>
-				<StringVariable label="Mountain" ref="bi2850" varname="bi2850" column="c1"/>
+				<StringVariable label="Mountain" ref="bi2889" varname="bi2889" column="c1"/>
 			</Variables>
 			<Columns>
 				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
@@ -272,7 +272,7 @@
 		<Result ref="dd1842" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
 				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi1838" varname="bi1838" column="c0"/>
-				<StringVariable label="Mountain" ref="bi2849" varname="bi2849" column="c1"/>
+				<StringVariable label="Mountain" ref="bi2888" varname="bi2888" column="c1"/>
 			</Variables>
 			<Columns>
 				<NumericColumn dataType="datetime" colname="c0" encoding="text"/>
@@ -302,8 +302,8 @@
 				<NumericVariable format="TIMEAMPM8" usage="categorical" label="Time" ref="bi2093" varname="bi2093" column="c0"/>
 				<NumericVariable format="BEST12." usage="categorical" label="Run" ref="bi2689" varname="bi2689" column="c1"/>
 				<NumericVariable format="COMMA12." usage="categorical" label="Lift" ref="bi2691" varname="bi2691" column="c2"/>
-				<StringVariable label="Mountain" ref="bi2851" varname="bi2851" column="c3"/>
-				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi2852" varname="bi2852" column="c4"/>
+				<StringVariable label="Mountain" ref="bi2890" varname="bi2890" column="c3"/>
+				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi2891" varname="bi2891" column="c4"/>
 				<NumericVariable format="F20." usage="quantitative" definedAggregation="sum" label="Heart Rate" ref="bi2095" varname="bi2095" column="c5"/>
 				<NumericVariable format="F20." usage="quantitative" definedAggregation="sum" label="Sensor Confidence" ref="bi2414" varname="bi2414" column="c6"/>
 				<NumericVariable format="F12.1" usage="quantitative" definedAggregation="sum" label="Speed (mph)" ref="bi2200" varname="bi2200" column="c7"/>
@@ -366,8 +366,8 @@
 		<Result ref="dd1676" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
 				<NumericVariable format="TIMEAMPM8" usage="categorical" label="Time" ref="bi1625" varname="bi1625" column="c0"/>
-				<NumericVariable format="DATETIME19" usage="categorical" label="Point" ref="bi2845" varname="bi2845" column="c1"/>
-				<StringVariable label="Hint" ref="bi2846" varname="bi2846" column="c2"/>
+				<NumericVariable format="DATETIME19" usage="categorical" label="Point" ref="bi2884" varname="bi2884" column="c1"/>
+				<StringVariable label="Hint" ref="bi2885" varname="bi2885" column="c2"/>
 				<StringVariable label="Mountain" ref="bi1595" varname="bi1595" column="c3"/>
 				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi1591" varname="bi1591" column="c4"/>
 				<NumericVariable format="BEST12." usage="categorical" label="Run" ref="bi244" varname="bi244" column="c5"/>
@@ -406,8 +406,8 @@
 		<Result ref="dd1679" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
 				<NumericVariable format="TIMEAMPM8" usage="categorical" label="Time" ref="bi1680" varname="bi1680" column="c0"/>
-				<NumericVariable format="DATETIME19" usage="categorical" label="Point" ref="bi2847" varname="bi2847" column="c1"/>
-				<StringVariable label="Hint" ref="bi2848" varname="bi2848" column="c2"/>
+				<NumericVariable format="DATETIME19" usage="categorical" label="Point" ref="bi2886" varname="bi2886" column="c1"/>
+				<StringVariable label="Hint" ref="bi2887" varname="bi2887" column="c2"/>
 				<StringVariable label="Mountain" ref="bi1595" varname="bi1595" column="c3"/>
 				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi1591" varname="bi1591" column="c4"/>
 				<NumericVariable format="BEST12." usage="categorical" label="Run" ref="bi244" varname="bi244" column="c5"/>
@@ -441,21 +441,21 @@
 		</Result>
 		<Result ref="dd256" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
-				<NumericVariable format="BEST12." usage="rollup" label="Run" ref="bi244" varname="ru0" column="c0"/>
-				<NumericVariable format="DTDATE9" usage="rollup" label="date" ref="bi1591" varname="ru1" column="c1"/>
-				<StringVariable usage="rollup" label="Mountain" ref="bi1595" varname="ru2" column="c2"/>
+				<StringVariable usage="rollup" label="Mountain" ref="bi1595" varname="ru0" column="c0"/>
+				<NumericVariable format="BEST12." usage="rollup" label="Run" ref="bi244" varname="ru1" column="c1"/>
+				<NumericVariable format="DTDATE9" usage="rollup" label="date" ref="bi1591" varname="ru2" column="c2"/>
 				<NumericVariable format="COMMA12." usage="quantitative" label="Vertical (ft)" ref="bi357" varname="bi357" column="c3"/>
 			</Variables>
 			<Columns>
-				<NumericColumn colname="c0" encoding="text"/>
+				<StringColumn maxLength="0" colname="c0" encoding="text"/>
 				<NumericColumn colname="c1" encoding="text"/>
-				<StringColumn maxLength="0" colname="c2" encoding="text"/>
+				<NumericColumn colname="c2" encoding="text"/>
 				<NumericColumn dataType="double" colname="c3" encoding="text"/>
 			</Columns>
 			<DefinedColumnSortItems>
 				<DefinedMeasureSortItem variable="bi357" sortDirection="descending"/>
 			</DefinedColumnSortItems>
-			<DataFile contentKey="IP3EOML4LCOKH4W34QIUFNLLIXY23CWP" size="15683" format="CSV" rowCount="660" grandTotal="false" dataLayout="rollup" file="dd256.csv" isIndexed="true" availableRowCount="660"/>
+			<DataFile contentKey="R2OWHUBXR3XMUCPWHKT5PWMUGSQC7S7C" size="15683" format="CSV" rowCount="660" grandTotal="false" dataLayout="rollup" file="dd256.csv" isIndexed="true" availableRowCount="660"/>
 			<StringTableFile contentKey="3HUTC6UHSVM5Y2VJXGUQ5VZQZ6UHZQ7D" size="33" format="CSV" rowCount="3" file="dd256index.csv"/>
 		</Result>
 		<Result ref="dd2553" type="relational" status="success" dataLevel="interactive" label="Coordinate" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
@@ -521,28 +521,28 @@
 		</Result>
 		<Result ref="dd266" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
-				<NumericVariable format="DTDATE9" usage="rollup" label="date" ref="bi1591" varname="ru0" column="c0"/>
-				<StringVariable usage="rollup" label="Mountain" ref="bi1595" varname="ru1" column="c1"/>
-				<NumericVariable format="BEST12." usage="rollup" label="Run" ref="bi244" varname="ru2" column="c2"/>
+				<NumericVariable format="BEST12." usage="rollup" label="Run" ref="bi244" varname="ru0" column="c0"/>
+				<NumericVariable format="DTDATE9" usage="rollup" label="date" ref="bi1591" varname="ru1" column="c1"/>
+				<StringVariable usage="rollup" label="Mountain" ref="bi1595" varname="ru2" column="c2"/>
 				<NumericVariable format="MMSS5." usage="quantitative" label="Duration" ref="bi359" varname="bi359" column="c3"/>
 			</Variables>
 			<Columns>
 				<NumericColumn colname="c0" encoding="text"/>
-				<StringColumn maxLength="0" colname="c1" encoding="text"/>
-				<NumericColumn colname="c2" encoding="text"/>
+				<NumericColumn colname="c1" encoding="text"/>
+				<StringColumn maxLength="0" colname="c2" encoding="text"/>
 				<NumericColumn dataType="double" colname="c3" encoding="text"/>
 			</Columns>
 			<DefinedColumnSortItems>
 				<DefinedMeasureSortItem variable="bi359" sortDirection="descending"/>
 			</DefinedColumnSortItems>
-			<DataFile contentKey="UKNYJ4XKJI6CRQ2U5RLNR2ZASWHVLKTA" size="13904" format="CSV" rowCount="660" grandTotal="false" dataLayout="rollup" file="dd266.csv" isIndexed="true" availableRowCount="660"/>
+			<DataFile contentKey="IANOCEARZP5DV43BFC6CF6SUUKI2FPB3" size="13904" format="CSV" rowCount="660" grandTotal="false" dataLayout="rollup" file="dd266.csv" isIndexed="true" availableRowCount="660"/>
 			<StringTableFile contentKey="3HUTC6UHSVM5Y2VJXGUQ5VZQZ6UHZQ7D" size="33" format="CSV" rowCount="3" file="dd266index.csv"/>
 		</Result>
 		<Result ref="dd325" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
 				<NumericVariable format="TIMEAMPM8" usage="categorical" label="Time" ref="bi345" varname="bi345" column="c0"/>
-				<NumericVariable format="DATETIME19" usage="categorical" label="Point" ref="bi2843" varname="bi2843" column="c1"/>
-				<StringVariable label="Hint" ref="bi2844" varname="bi2844" column="c2"/>
+				<NumericVariable format="DATETIME19" usage="categorical" label="Point" ref="bi2882" varname="bi2882" column="c1"/>
+				<StringVariable label="Hint" ref="bi2883" varname="bi2883" column="c2"/>
 				<StringVariable label="Mountain" ref="bi1595" varname="bi1595" column="c3"/>
 				<NumericVariable format="DTDATE9" usage="categorical" label="date" ref="bi1591" varname="bi1591" column="c4"/>
 				<NumericVariable format="BEST12." usage="categorical" label="Run" ref="bi244" varname="bi244" column="c5"/>
@@ -576,21 +576,21 @@
 		</Result>
 		<Result ref="dd361" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
 			<Variables>
-				<NumericVariable format="DTDATE9" usage="rollup" label="date" ref="bi1591" varname="ru0" column="c0"/>
-				<StringVariable usage="rollup" label="Mountain" ref="bi1595" varname="ru1" column="c1"/>
-				<NumericVariable format="BEST12." usage="rollup" label="Run" ref="bi244" varname="ru2" column="c2"/>
+				<NumericVariable format="BEST12." usage="rollup" label="Run" ref="bi244" varname="ru0" column="c0"/>
+				<NumericVariable format="DTDATE9" usage="rollup" label="date" ref="bi1591" varname="ru1" column="c1"/>
+				<StringVariable usage="rollup" label="Mountain" ref="bi1595" varname="ru2" column="c2"/>
 				<NumericVariable format="COMMA12.2" usage="quantitative" label="Feet per Second" ref="bi368" varname="bi368" column="c3"/>
 			</Variables>
 			<Columns>
 				<NumericColumn colname="c0" encoding="text"/>
-				<StringColumn maxLength="0" colname="c1" encoding="text"/>
-				<NumericColumn colname="c2" encoding="text"/>
+				<NumericColumn colname="c1" encoding="text"/>
+				<StringColumn maxLength="0" colname="c2" encoding="text"/>
 				<NumericColumn dataType="double" colname="c3" encoding="text"/>
 			</Columns>
 			<DefinedColumnSortItems>
 				<DefinedMeasureSortItem variable="bi368" sortDirection="descending"/>
 			</DefinedColumnSortItems>
-			<DataFile contentKey="SXUSOHQDNRG7QXIS2FDUQPVFXTT7BPUH" size="15638" format="CSV" rowCount="660" grandTotal="false" dataLayout="rollup" file="dd361.csv" isIndexed="true" availableRowCount="660"/>
+			<DataFile contentKey="Q6C7J6RHXPCKXF5KPPKFYGXCB4IE7XMO" size="15638" format="CSV" rowCount="660" grandTotal="false" dataLayout="rollup" file="dd361.csv" isIndexed="true" availableRowCount="660"/>
 			<StringTableFile contentKey="3HUTC6UHSVM5Y2VJXGUQ5VZQZ6UHZQ7D" size="33" format="CSV" rowCount="3" file="dd361index.csv"/>
 		</Result>
 		<Result ref="dd1823" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="detail" supportsExportDetail="false" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-04-07T00:13:19.215Z">
@@ -670,7 +670,7 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi1592" base="bi1591"/>
 				<RelationalDataItem name="bi2773" base="bi354"/>
-				<RelationalDataItem name="bi2840" base="bi1595"/>
+				<RelationalDataItem name="bi2879" base="bi1595"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="relational" name="dd300">
 				<RelationalQuery detail="false">
@@ -700,8 +700,8 @@
 					<Expression>notMissing(${bi310,binned})</Expression>
 				</RelationalFilterItem>
 				<RelationalDataItem name="bi2772" base="bi354"/>
-				<RelationalDataItem name="bi2841" base="bi1591"/>
-				<RelationalDataItem name="bi2842" base="bi1595"/>
+				<RelationalDataItem name="bi2880" base="bi1591"/>
+				<RelationalDataItem name="bi2881" base="bi1595"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="relational" name="dd305">
 				<RelationalQuery detail="false">
@@ -731,8 +731,8 @@
 				<RelationalDataItem name="bi351" base="bi250"/>
 				<RelationalDataItem name="bi2206" base="bi241"/>
 				<RelationalDataItem name="bi2207" base="bi243"/>
-				<RelationalDataItem name="bi2843" base="bi404"/>
-				<RelationalDataItem name="bi2844" base="bi2298"/>
+				<RelationalDataItem name="bi2882" base="bi404"/>
+				<RelationalDataItem name="bi2883" base="bi2298"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="multidimensional" name="dd324">
 				<MultidimensionalQuery detail="false">
@@ -802,8 +802,8 @@
 				<RelationalDataItem name="bi2204" base="bi243"/>
 				<RelationalDataItem name="bi2205" base="bi241"/>
 				<RelationalDataItem name="bi2404" base="bi240"/>
-				<RelationalDataItem name="bi2845" base="bi404"/>
-				<RelationalDataItem name="bi2846" base="bi2298"/>
+				<RelationalDataItem name="bi2884" base="bi404"/>
+				<RelationalDataItem name="bi2885" base="bi2298"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="multidimensional" name="dd1675">
 				<MultidimensionalQuery detail="false">
@@ -830,8 +830,8 @@
 				<RelationalDataItem name="bi1687" base="bi251"/>
 				<RelationalDataItem name="bi2202" base="bi241"/>
 				<RelationalDataItem name="bi2203" base="bi243"/>
-				<RelationalDataItem name="bi2847" base="bi404"/>
-				<RelationalDataItem name="bi2848" base="bi2298"/>
+				<RelationalDataItem name="bi2886" base="bi404"/>
+				<RelationalDataItem name="bi2887" base="bi2298"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="multidimensional" name="dd1683">
 				<MultidimensionalQuery detail="false">
@@ -900,7 +900,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds236" name="dd1840">
 			<BusinessItems>
 				<RelationalDataItem name="bi1838" base="bi1591"/>
-				<RelationalDataItem name="bi2849" base="bi1595"/>
+				<RelationalDataItem name="bi2888" base="bi1595"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="relational" name="dd1841">
 				<RelationalQuery detail="false">
@@ -973,7 +973,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds236" name="dd2057">
 			<BusinessItems>
 				<RelationalDataItem name="bi2077" base="bi1591"/>
-				<RelationalDataItem name="bi2850" base="bi1595"/>
+				<RelationalDataItem name="bi2889" base="bi1595"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="relational" name="dd2058">
 				<RelationalQuery detail="false">
@@ -1113,8 +1113,8 @@
 				<RelationalDataItem name="bi2199" base="bi243"/>
 				<RelationalDataItem name="bi2689" base="bi244"/>
 				<RelationalDataItem name="bi2691" base="bi242"/>
-				<RelationalDataItem name="bi2851" base="bi1595"/>
-				<RelationalDataItem name="bi2852" base="bi1591"/>
+				<RelationalDataItem name="bi2890" base="bi1595"/>
+				<RelationalDataItem name="bi2891" base="bi1591"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds236" type="multidimensional" name="dd2505">
 				<MultidimensionalQuery detail="false">
@@ -1376,7 +1376,7 @@
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi2840</Property>
+				<Property key="addedInteractionQueryDataItems">bi2879</Property>
 			</EditorProperties>
 			<Title auto="false"><P><Span>Date / Max Speed</Span></P></Title>
 			<RadioBoxList searchable="false" valueVariable="bi1592" measureVariable="bi2773"/>
@@ -1385,7 +1385,7 @@
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi2841,bi2842</Property>
+				<Property key="addedInteractionQueryDataItems">bi2880,bi2881</Property>
 			</EditorProperties>
 			<Title auto="false"><P><Span>Run Number / Max Speed</Span></P></Title>
 			<RadioBoxList searchable="false" valueVariable="bi310" measureVariable="bi2772"/>
@@ -1395,7 +1395,7 @@
 				<Property key="isAutoLabel">true</Property>
 				<Property key="timeSeriesBinOption">formatBin</Property>
 				<Property key="timeSeriesFixedBinCardinality">300</Property>
-				<Property key="addedInteractionQueryDataItems">bi2843,bi2844</Property>
+				<Property key="addedInteractionQueryDataItems">bi2882,bi2883</Property>
 			</EditorProperties>
 			<Title auto="false"><P class="styleForTitle_paragraph1"><Span class="styleForTitle_span1">Elevation Change</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -1532,7 +1532,7 @@
 				<Property key="isAutoLabel">true</Property>
 				<Property key="timeSeriesBinOption">formatBin</Property>
 				<Property key="timeSeriesFixedBinCardinality">300</Property>
-				<Property key="addedInteractionQueryDataItems">bi2845,bi2846</Property>
+				<Property key="addedInteractionQueryDataItems">bi2884,bi2885</Property>
 			</EditorProperties>
 			<Title auto="false"><P class="styleForTitle_paragraph1"><Span class="styleForTitle_span1">Heart Rate Throughout Run</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -1605,7 +1605,7 @@
 				<Property key="isAutoLabel">true</Property>
 				<Property key="timeSeriesBinOption">formatBin</Property>
 				<Property key="timeSeriesFixedBinCardinality">300</Property>
-				<Property key="addedInteractionQueryDataItems">bi2847,bi2848</Property>
+				<Property key="addedInteractionQueryDataItems">bi2886,bi2887</Property>
 			</EditorProperties>
 			<Title auto="false"><P class="styleForTitle_paragraph1"><Span class="styleForTitle_span1">Speed Throughout Run</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -1690,7 +1690,7 @@
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="autoChartCategory">CONTROL</Property>
-				<Property key="addedInteractionQueryDataItems">bi2849</Property>
+				<Property key="addedInteractionQueryDataItems">bi2888</Property>
 			</EditorProperties>
 			<CheckBoxList valueVariable="bi1838"/>
 		</Prompt>
@@ -1757,7 +1757,7 @@
 			<EditorProperties>
 				<Property key="autoChartCategory">CONTROL</Property>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi2850</Property>
+				<Property key="addedInteractionQueryDataItems">bi2889</Property>
 			</EditorProperties>
 			<ComboBox valueVariable="bi2077"/>
 		</Prompt>
@@ -1952,7 +1952,7 @@
 		<Graph graphType="line" supplementalVisuals="ve2507" resultDefinitions="dd2506" name="ve2084" data="dd2504" label="Line - Time 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi2093 bi2689 bi2691">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi2851,bi2852</Property>
+				<Property key="addedInteractionQueryDataItems">bi2890,bi2891</Property>
 			</EditorProperties>
 			<Title auto="false"><P class="styleForTitle_paragraph1"></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -2106,6 +2106,9 @@
 				<Column variable="bi1904"/>
 			</Columns>
 		</Table>
+		<Text name="ve2877" label="Text 1 (1)" selectionDisabled="true" applyDynamicBrushes="no">
+			<P><Span class="span1">If you have errors on the page, disable your adblocker, clear your browser cache and reload the page.</Span></P>
+		</Text>
 	</VisualElements>
 	<View>
 		<Header>
@@ -2171,7 +2174,7 @@
 			</Header>
 			<Body>
 				<MediaContainer target="mt2">
-					<ResponsiveLayout orientation="vertical" overflow="scroll">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
 						<Weights mediaTarget="mt5" unit="percent">
 							<Weight value="100%"/>
 						</Weights>
@@ -2394,6 +2397,16 @@
 							</Visual>
 						</Container>
 					</Container>
+					<Visual ref="ve2877" name="vi2878">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+					</Visual>
 				</MediaContainer>
 			</Body>
 		</Section>
@@ -2619,55 +2632,55 @@
 	<Interactions>
 		<Interaction name="ia421" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve298" variable="bi1592"/>
-			<InteractionElementReference purpose="target" ref="ve307" variable="bi2841"/>
+			<InteractionElementReference purpose="target" ref="ve307" variable="bi2880"/>
 		</Interaction>
 		<Interaction name="ia1602" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1597" variable="bi1601"/>
-			<InteractionElementReference purpose="target" ref="ve298" variable="bi2840"/>
+			<InteractionElementReference purpose="target" ref="ve298" variable="bi2879"/>
 		</Interaction>
 		<Interaction name="ia1603" type="filter" derived="true">
 			<InteractionElementReference purpose="source" ref="ve1597" variable="bi1601"/>
-			<InteractionElementReference purpose="target" ref="ve307" variable="bi2842"/>
+			<InteractionElementReference purpose="target" ref="ve307" variable="bi2881"/>
 		</Interaction>
 		<Interaction name="ia2098" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve2053" variable="bi2076"/>
-			<InteractionElementReference purpose="target" ref="ve2060" variable="bi2850"/>
+			<InteractionElementReference purpose="target" ref="ve2060" variable="bi2889"/>
 		</Interaction>
 		<Interaction name="ia2161" type="brush" derived="false">
 			<InteractionElementReference purpose="source" ref="ve262" variable="bi2166 bi2300"/>
-			<InteractionElementReference purpose="target" ref="ve322" variable="bi2843 bi2844"/>
+			<InteractionElementReference purpose="target" ref="ve322" variable="bi2882 bi2883"/>
 		</Interaction>
 		<Interaction name="ia2163" type="brush" derived="false">
 			<InteractionElementReference purpose="source" ref="ve262" variable="bi2166 bi2300"/>
-			<InteractionElementReference purpose="target" ref="ve1620" variable="bi2845 bi2846"/>
+			<InteractionElementReference purpose="target" ref="ve1620" variable="bi2884 bi2885"/>
 		</Interaction>
 		<Interaction name="ia2165" type="brush" derived="false">
 			<InteractionElementReference purpose="source" ref="ve262" variable="bi2166 bi2300"/>
-			<InteractionElementReference purpose="target" ref="ve1685" variable="bi2847 bi2848"/>
+			<InteractionElementReference purpose="target" ref="ve1685" variable="bi2886 bi2887"/>
 		</Interaction>
 		<Interaction name="ia2201" type="filter" dataStage="detail" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1828" variable="bi1832"/>
-			<InteractionElementReference purpose="target" ref="ve1834" variable="bi2849"/>
+			<InteractionElementReference purpose="target" ref="ve1834" variable="bi2888"/>
 		</Interaction>
 		<Interaction name="ia2358" type="brush" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1211" variable="bi2167 bi2299"/>
-			<InteractionElementReference purpose="target" ref="ve322" variable="bi2843 bi2844"/>
+			<InteractionElementReference purpose="target" ref="ve322" variable="bi2882 bi2883"/>
 		</Interaction>
 		<Interaction name="ia2360" type="brush" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1211" variable="bi2167 bi2299"/>
-			<InteractionElementReference purpose="target" ref="ve1620" variable="bi2845 bi2846"/>
+			<InteractionElementReference purpose="target" ref="ve1620" variable="bi2884 bi2885"/>
 		</Interaction>
 		<Interaction name="ia2362" type="brush" derived="false">
 			<InteractionElementReference purpose="source" ref="ve1211" variable="bi2167 bi2299"/>
-			<InteractionElementReference purpose="target" ref="ve1685" variable="bi2847 bi2848"/>
+			<InteractionElementReference purpose="target" ref="ve1685" variable="bi2886 bi2887"/>
 		</Interaction>
 		<Interaction name="ia2096" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve2053" variable="bi2076"/>
-			<InteractionElementReference purpose="target" ref="ve2084" variable="bi2851"/>
+			<InteractionElementReference purpose="target" ref="ve2084" variable="bi2890"/>
 		</Interaction>
 		<Interaction name="ia2097" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve2060" variable="bi2077"/>
-			<InteractionElementReference purpose="target" ref="ve2084" variable="bi2852"/>
+			<InteractionElementReference purpose="target" ref="ve2084" variable="bi2891"/>
 		</Interaction>
 	</Interactions>
 	<MediaSchemes>
@@ -2732,7 +2745,7 @@
 			<Revision editorVersion="2024.01" lastDate="2024-02-12T01:27:59.976Z"/>
 			<Revision editorVersion="2024.02" lastDate="2024-03-24T19:29:46.421Z"/>
 			<Revision editorVersion="2025.01" lastDate="2025-04-04T19:46:03.856Z"/>
-			<Revision editorVersion="2025.03" lastDate="2025-04-07T17:34:28.762Z"/>
+			<Revision editorVersion="2025.03" lastDate="2025-04-07T17:53:39.455Z"/>
 		</Editor>
 	</Editors>
 </History>

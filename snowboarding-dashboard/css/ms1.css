@@ -10,8 +10,14 @@
   background-color: #FFFFFF;
   transparency: 0;
 }
+#ve2877 .ReportElementContainer {
+  padding: 0px;
+}
 #ve1884 .styleForTitle_paragraph1 {
   text-align: center;
+}
+#ve2877 .span1 {
+  font-style: italic;
 }
 #ve1620 .styleForTitle_span1 {
   font-weight: bold;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds236" resourceIdentifier="'cas-shared-epic','PMVAPub','SNOWBOARDING_GPS_HR','en_US'" tableModifiedTimeStamp="2025-04-07T00:13:19.215Z">
+            <columns>
+                <column dataType="datetime" format="DATETIME19" label="timestamp" xref="timestamp"/>
+                <column dataType="double" format="BEST12." label="lat" xref="lat"/>
+                <column dataType="double" format="BEST12." label="lon" xref="lon"/>
+                <column dataType="double" format="BEST12." label="lift_nbr" xref="lift_nbr"/>
+                <column dataType="double" format="BEST12." label="run_nbr" xref="run_nbr"/>
+                <column dataType="double" format="BEST12." label="elevation" xref="elevation"/>
+                <column dataType="double" format="BEST12." label="speed" xref="speed"/>
+                <column dataType="double" format="F20." label="bpm" xref="bpm"/>
+                <column dataType="double" format="F20." label="hr_sensor_confidence" xref="hr_sensor_confidence"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

@@ -2,6 +2,9 @@
   fill-gradient-start-color : #C7E3F9;
   fill-gradient-end-color : #DD5757;
 }
+#ve1820 .tableColumnbi2102 {
+  fill-gradient-end-color : #287FC7;
+}
 #ve1884 .styleForTitle_paragraph1 {
   text-align : center;
 }
@@ -10,6 +13,9 @@
 }
 #ve3018 .styleForTitle_paragraph1 {
   text-align : center;
+}
+#ve2918 .GraphDataStyleDefault {
+  fill-color : #287FC7;
 }
 #ve1620 .styleForTitle_span1 {
   font-weight : bold;
@@ -61,6 +67,9 @@
 #ve2877 .ReportElementContainer {
   padding : 0px;
 }
+#ve2918 .GraphDataStyle1 {
+  fill-color : #287FC7;
+}
 #ve3075 .span1 {
   font-style : italic;
 }
@@ -86,8 +95,5 @@
   text-align : center;
 }
 #ve322 .styleForTitle_paragraph1 {
-  text-align : center;
-}
-#ve2954 .styleForTitle_paragraph1 {
   text-align : center;
 }

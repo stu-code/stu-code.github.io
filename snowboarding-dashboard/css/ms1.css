@@ -1,63 +1,93 @@
-
-
-#ve2304 .paragraph1 {
-  text-align: center;
-}
-#ve2290 .ReportElementContainer {
-  padding: 0px;
-}
-#ve2177 .Container {
-  background-color: #FFFFFF;
-  transparency: 0;
-}
-#ve2877 .ReportElementContainer {
-  padding: 0px;
+#ve1820 .tableColumnbi2101 {
+  fill-gradient-start-color : #C7E3F9;
+  fill-gradient-end-color : #DD5757;
 }
 #ve1884 .styleForTitle_paragraph1 {
-  text-align: center;
+  text-align : center;
 }
 #ve2877 .span1 {
-  font-style: italic;
+  font-style : italic;
+}
+#ve3018 .styleForTitle_paragraph1 {
+  text-align : center;
 }
 #ve1620 .styleForTitle_span1 {
-  font-weight: bold;
+  font-weight : bold;
 }
 #ve2278 .span1 {
-  font-style: italic;
-}
-#ve2084 .styleForTitle_paragraph1 {
-  text-align: center;
+  font-style : italic;
 }
 #ve1896 .styleForTitle_paragraph1 {
-  text-align: center;
+  text-align : center;
 }
-#ve1685 .styleForTitle_paragraph1 {
-  text-align: center;
-}
-#ve1685 .styleForTitle_span1 {
-  font-weight: bold;
+#ve2918 .styleForTitle_span1 {
+  font-weight : bold;
 }
 #ve322 .styleForTitle_span1 {
-  font-weight: bold;
+  font-weight : bold;
 }
 #ve2278 .ReportElementContainer {
-  padding: 0px;
+  padding : 0px;
 }
 #ve2304 .span1 {
-  font-weight: bold;
-  font-size: 13.5pt;
+  font-weight : bold;
+  font-size : 13.5pt;
+}
+#ve2918 .styleForTitle_paragraph1 {
+  text-align : center;
 }
 #ve1896 .styleForTitle_span1 {
-  font-weight: bold;
-}
-#ve1620 .styleForTitle_paragraph1 {
-  text-align: center;
-}
-#ve322 .styleForTitle_paragraph1 {
-  text-align: center;
+  font-weight : bold;
 }
 #ve1884 .styleForTitle_span1 {
-  font-weight: bold;
+  font-weight : bold;
 }
-
-			
+#ve3018 .GraphDataStyle1 {
+  fill-color : #B14C51;
+}
+#ve2304 .paragraph1 {
+  text-align : center;
+}
+#ve2290 .ReportElementContainer {
+  padding : 0px;
+}
+#ve2177 .Container {
+  background-color : #FFFFFF;
+  transparency : 0;
+}
+#ve3018 .TwoColorRamp {
+  fill-gradient-end-color : #B14C51;
+}
+#ve2877 .ReportElementContainer {
+  padding : 0px;
+}
+#ve3075 .span1 {
+  font-style : italic;
+}
+#ve3018 .TwoColorRamp1 {
+  fill-gradient-end-color : #B14C51;
+}
+#ve3018 .styleForTitle_span1 {
+  font-weight : bold;
+}
+#ve2084 .styleForTitle_paragraph1 {
+  text-align : center;
+}
+#ve1685 .styleForTitle_paragraph1 {
+  text-align : center;
+}
+#ve1685 .styleForTitle_span1 {
+  font-weight : bold;
+}
+#ve3018 .GraphDataStyleDefault {
+  fill-color : #B14C51;
+}
+#ve1620 .styleForTitle_paragraph1 {
+  text-align : center;
+}
+#ve322 .styleForTitle_paragraph1 {
+  text-align : center;
+}
+#ve2954 .styleForTitle_paragraph1 {
+  text-align : center;
+}

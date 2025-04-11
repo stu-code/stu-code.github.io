@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <metadataSupplement>
     <tables>
-        <table dataLocale="en_US" dataSources="ds236" resourceIdentifier="'cas-shared-epic','PMVAPub','SNOWBOARDING_GPS_HR','en_US'" tableModifiedTimeStamp="2025-04-07T00:13:19.215Z">
+        <table dataLocale="en_US" dataSources="ds236" resourceIdentifier="'cas-shared-default','Public','SNOWBOARDING_GPS_HR','en_US'" tableModifiedTimeStamp="2025-04-11T14:22:28.905Z">
             <columns>
                 <column dataType="datetime" format="DATETIME19" label="timestamp" xref="timestamp"/>
                 <column dataType="double" format="BEST12." label="lat" xref="lat"/>

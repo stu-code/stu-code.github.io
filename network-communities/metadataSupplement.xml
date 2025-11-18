@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','CASUSER','HAVE','en_US'" tableModifiedTimeStamp="2025-11-18T18:21:31.826Z">
+            <columns>
+                <column dataType="string" label="ID1" xref="ID1"/>
+                <column dataType="string" label="ID2" xref="ID2"/>
+            </columns>
+        </table>
+    </tables>
+    <version>3</version>
+</metadataSupplement>

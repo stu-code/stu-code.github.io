@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.58.0" label="Report 1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.58.0" dateCreated="2025-11-18T19:22:34Z" dateModified="2025-11-18T19:22:34Z" createdApplication="SAS Visual Analytics" nextUniqueNameIndex="74">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.58.0" label="Report 1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.58.0" dateCreated="2025-11-18T21:47:04Z" dateModified="2025-11-18T21:47:04Z" createdApplication="SAS Visual Analytics" nextUniqueNameIndex="81">
 	<Results>
+		<Result ref="dd58" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
+			<Variables>
+				<StringVariable label="ID1" ref="bi59" varname="bi59" column="c0"/>
+				<StringVariable label="ID2" ref="bi60" varname="bi60" column="c1"/>
+				<NumericVariable format="COMMA12.2" usage="brush" definedAggregation="totalCount" varname="ri1" column="c2"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="1" colname="c0" encoding="text"/>
+				<StringColumn maxLength="2" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+			</Columns>
+			<DefinedSortItems>
+				<DefinedSortItem variable="bi59" sortDirection="ascending"/>
+			</DefinedSortItems>
+			<Data isIndexed="true" availableRowCount="10" contentKey="VJKTVAW3I2TPPQMFQOMNQHRQ2JEQLAZ4" size="85" format="CSV" rowCount="10" grandTotal="false" dataLayout="minimal"><![CDATA[0,11,1.0
+0,12,1.0
+0,10,1.0
+1,12,1.0
+1,11,1.0
+2,9,1.0
+3,9,1.0
+4,8,1.0
+4,7,1.0
+5,6,1.0
+]]></Data>
+			<StringTable contentKey="DZ2GNGKJIL5DWBIKG6544QC5EIIGZ6JE" size="52" format="CSV" rowCount="13"><![CDATA["A"
+"B"
+"C"
+"D"
+"E"
+"F"
+"T"
+"U"
+"V"
+"W"
+"X"
+"Y"
+"Z"
+]]></StringTable>
+		</Result>
 		<Result ref="dd33" type="relational" status="success" dataLevel="baseline" label="Network Analysis Summary" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
 			<Variables>
 				<StringVariable label="Network Analysis Summary" ref="bi32" varname="bi32" column="c0"/>
@@ -26,7 +66,7 @@
 				<NumericVariable format="BEST." usage="quantitative" label="Y" ref="bi27" varname="bi27" column="c10"/>
 				<StringVariable label="ID1" ref="bi46" varname="bi46" column="c11"/>
 				<StringVariable label="ID2" ref="bi51" varname="bi51" column="c12"/>
-				<NumericVariable format="COMMA20." usage="categorical" label="Community" ref="bi38" varname="bi38" column="c13"/>
+				<NumericVariable format="COMMA20." usage="categorical" label="Disconnected Network ID" ref="bi80" varname="bi80" column="c13"/>
 			</Variables>
 			<Columns>
 				<StringColumn maxLength="2" colname="c0" encoding="text"/>
@@ -122,44 +162,6 @@
 "Z(ID1)"
 ]]></StringTable>
 		</Result>
-		<Result ref="dd58" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
-			<Variables>
-				<StringVariable label="ID1" ref="bi59" varname="bi59" column="c0"/>
-				<StringVariable label="ID2" ref="bi60" varname="bi60" column="c1"/>
-			</Variables>
-			<Columns>
-				<StringColumn maxLength="1" colname="c0" encoding="text"/>
-				<StringColumn maxLength="2" colname="c1" encoding="text"/>
-			</Columns>
-			<DefinedSortItems>
-				<DefinedSortItem variable="bi59" sortDirection="ascending"/>
-			</DefinedSortItems>
-			<Data isIndexed="true" availableRowCount="10" contentKey="MTWAN6A5DH3O76J2LRWFA6NNPB6DAOXM" size="45" format="CSV" rowCount="10" grandTotal="false" dataLayout="minimal"><![CDATA[0,10
-0,11
-0,12
-1,11
-1,12
-2,9
-3,9
-4,7
-4,8
-5,6
-]]></Data>
-			<StringTable contentKey="DZ2GNGKJIL5DWBIKG6544QC5EIIGZ6JE" size="52" format="CSV" rowCount="13"><![CDATA["A"
-"B"
-"C"
-"D"
-"E"
-"F"
-"T"
-"U"
-"V"
-"W"
-"X"
-"Y"
-"Z"
-]]></StringTable>
-		</Result>
 	</Results>
 	<DataDefinitions>
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd14">
@@ -167,7 +169,7 @@
 				<SyntheticItems name="si18">
 					<Item purpose="dataTip" root="bi43" name="bi46"/>
 					<Item purpose="dataTip" root="bi50" name="bi51"/>
-					<Item purpose="community" name="bi38"/>
+					<Item purpose="disconnectedNetworkId" name="bi80"/>
 					<Item purpose="itemType" name="bi19"/>
 					<Item purpose="uniqueId" name="bi20"/>
 					<Item purpose="uniqueIdLabel" name="bi21"/>
@@ -274,8 +276,8 @@
 	<VisualElements>
 		<Graph graphType="network" graphSubType="networkDirected" supplementalVisuals="ve36 ve49" resultDefinitions="dd16" name="ve13" data="dd14" label="Network analysis - ID1 1" applyDynamicBrushes="no" sourceInteractionVariables="bi22">
 			<EditorProperties>
-				<Property key="derivedVisualType">true</Property>
 				<Property key="isAutoLabel">true</Property>
+				<Property key="derivedVisualType">true</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel" displayOptionPolicy="union">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -285,8 +287,7 @@
         </DataNameMap>
     </Meta>
     <LayoutOverlayMap name="LayoutOverlayMap">
-        <NetworkPlot name="NetworkPlot" compactLabelFormats="true" display="NODEOUTLINE NODEFILL" tip="none" fromId="dd16#bi24" linkId="dd16#bi20" nodeGroup="dd16#bi38" nodeId="dd16#bi20" nodeLabel="dd16#bi21" nodeLabelPriority_type="NUMERIC" nodeLabelPriority="1" nodeX="dd16#bi26" nodeY="dd16#bi27" toId="dd16#bi25" type="dd16#bi19" x="dd16#bi26" y="dd16#bi27">
-            <ViewportOptions resetViewportForNewDataModel="true"/>
+        <NetworkPlot name="NetworkPlot" compactLabelFormats="true" display="NODEOUTLINE NODEFILL" tip="none" fromId="dd16#bi24" linkId="dd16#bi20" nodeGroup="dd16#bi80" nodeId="dd16#bi20" nodeLabel="dd16#bi21" nodeLabelPriority_type="NUMERIC" nodeLabelPriority="1" nodeX="dd16#bi26" nodeY="dd16#bi27" toId="dd16#bi25" type="dd16#bi19" x="dd16#bi26" y="dd16#bi27">
             <LinkTip>
                 <Value>dd16#bi21</Value>
                 <Value>dd16#bi24</Value>
@@ -296,7 +297,7 @@
                 <Value>dd16#bi46</Value>
                 <Value>dd16#bi51</Value>
                 <Value>dd16#bi21</Value>
-                <Value>dd16#bi38</Value>
+                <Value>dd16#bi80</Value>
             </NodeTip>
             <NodeLabelAttrs size="10.5pt" weight="bold"/>
         </NetworkPlot>
@@ -344,7 +345,7 @@
 				<Column variable="bi20"/>
 				<Column variable="bi24"/>
 				<Column variable="bi25"/>
-				<Column variable="bi38"/>
+				<Column variable="bi80"/>
 				<Column variable="bi46"/>
 				<Column variable="bi51"/>
 			</Columns>
@@ -368,17 +369,23 @@
 				<Column variable="bi60" isVisible="true"/>
 			</Columns>
 		</Table>
+		<Text name="ve66" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
+			<P><Span class="span1">Creating groups from Network Analysis</Span><Span>: This dashboard uses Network Analysis to visualize the groups that we want to create with the data shown to the right.  Here are our rules:</Span></P>
+			<P></P>
+			<P><Span>1️⃣ All rows with the same ID1 should have the same value of Group.</Span></P>
+			<P><Span>2️⃣ All rows with the same ID2 should have the same value of Group.</Span></P>
+			<P><Span>3️⃣ The two above conditions have to be combined. e.g. if A-&gt;Z and also B-&gt;Z, then all rows with ID1 = A or ID1 = B should have the same value of Group, since they share at least one ID2. Conversely, all rows with ID2 = Y or ID2 = X should have the same value of Group, since they share at least one ID1.</Span></P>
+			<P></P>
+			<P><Span>By reframing this problem as an undirected network, we can use PROC OPTNETWORK or PROC OPTNET to identify each unique group. Check out the links below for more information about this problem and how to solve it.</Span></P>
+			<P></P>
+			<P><Span>For more information, see: </Span><Span action="ac72" class="span2">https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire</Span></P>
+			<P><Span>Code: </Span><Span action="ac73">https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas</Span></P>
+		</Text>
 		<VisualContainer containerType="layout" name="ve71" label="Layout Container 3" selectionDisabled="true">
 			<EditorProperties>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Text name="ve66" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
-			<P><Span class="span1">Creating groups from Network Analysis</Span><Span>: This dashboard uses Network Analysis to visualize the groups that we want to create with the data shown to the right. By reframing this problem as an undirected network, we can use PROC OPTNETWORK or PROC OPTNET to identify each unique group. Check out the links below for more information about this problem and how to solve it.</Span></P>
-			<P></P>
-			<P><Span>For more information, see: </Span><Span action="ac72" class="span2">https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire</Span></P>
-			<P><Span>Code: </Span><Span action="ac73">https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas</Span></P>
-		</Text>
 	</VisualElements>
 	<View>
 		<Section name="vi6" label="Page 1">
@@ -465,6 +472,12 @@
 		<NavigationAction type="url" value="https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire" label="https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire" name="ac72"/>
 		<NavigationAction type="url" value="https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas" label="https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas" name="ac73"/>
 	</Actions>
+	<Interactions>
+		<Interaction name="ia76" type="brush" derived="false">
+			<InteractionElementReference purpose="source" ref="ve13" variable="bi22"/>
+			<InteractionElementReference purpose="target" ref="ve55" variable="bi59"/>
+		</Interaction>
+	</Interactions>
 	<MediaSchemes>
 		<MediaScheme name="ms1">
 			<BaseStylesheetResource file="basems1.css" theme="light2025"/>

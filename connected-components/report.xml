@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.58.0" label="Report 1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.58.0" dateCreated="2025-11-18T21:47:04Z" dateModified="2025-11-18T21:47:04Z" createdApplication="SAS Visual Analytics" nextUniqueNameIndex="81">
+	<Results>
+		<Result ref="dd58" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
+			<Variables>
+				<StringVariable label="ID1" ref="bi59" varname="bi59" column="c0"/>
+				<StringVariable label="ID2" ref="bi60" varname="bi60" column="c1"/>
+				<NumericVariable format="COMMA12.2" usage="brush" definedAggregation="totalCount" varname="ri1" column="c2"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="1" colname="c0" encoding="text"/>
+				<StringColumn maxLength="2" colname="c1" encoding="text"/>
+				<NumericColumn dataType="double" colname="c2" encoding="text"/>
+			</Columns>
+			<DefinedSortItems>
+				<DefinedSortItem variable="bi59" sortDirection="ascending"/>
+			</DefinedSortItems>
+			<Data isIndexed="true" availableRowCount="10" contentKey="VJKTVAW3I2TPPQMFQOMNQHRQ2JEQLAZ4" size="85" format="CSV" rowCount="10" grandTotal="false" dataLayout="minimal"><![CDATA[0,11,1.0
+0,12,1.0
+0,10,1.0
+1,12,1.0
+1,11,1.0
+2,9,1.0
+3,9,1.0
+4,8,1.0
+4,7,1.0
+5,6,1.0
+]]></Data>
+			<StringTable contentKey="DZ2GNGKJIL5DWBIKG6544QC5EIIGZ6JE" size="52" format="CSV" rowCount="13"><![CDATA["A"
+"B"
+"C"
+"D"
+"E"
+"F"
+"T"
+"U"
+"V"
+"W"
+"X"
+"Y"
+"Z"
+]]></StringTable>
+		</Result>
+		<Result ref="dd33" type="relational" status="success" dataLevel="baseline" label="Network Analysis Summary" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
+			<Variables>
+				<StringVariable label="Network Analysis Summary" ref="bi32" varname="bi32" column="c0"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="527" colname="c0" encoding="text"/>
+			</Columns>
+			<Data isIndexed="false" availableRowCount="1" contentKey="4GDYKREQGSGGQY42NHJ5GBPL47EOWMIY" size="528" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA["The network analysis object displays the relationships between data item values as a series of linked nodes. The graph has three clusters (connected groups of three or more nodes). There is one isolated pair of nodes and no singleton nodes (nodes without links). There are 13 nodes and 10 links, where the average degree (links per node) is 1.5. A has the highest degree centrality score of 3 (total number of links). The network density is 13%. A network density of 100% means every node is directly connected to each other."
+]]></Data>
+		</Result>
+		<Result ref="dd16" type="relational" status="success" dataLevel="baseline" label="Ungrouped - ID1" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
+			<Variables>
+				<StringVariable label="Item Type" ref="bi19" varname="bi19" column="c0"/>
+				<StringVariable label="Item Type" ref="bi30" varname="bi30" column="c1"/>
+				<StringVariable label="ID" ref="bi20" varname="bi20" column="c2"/>
+				<StringVariable label="ID" ref="bi21" varname="bi21" column="c3"/>
+				<StringVariable label="ID1" ref="bi22" varname="bi22" column="c4"/>
+				<StringVariable label="Persistence Node ID" ref="bi23" varname="bi23" column="c5"/>
+				<StringVariable label="Source" ref="bi24" varname="bi24" column="c6"/>
+				<StringVariable label="Target" ref="bi25" varname="bi25" column="c7"/>
+				<StringVariable label="Direction" ref="bi28" varname="bi28" column="c8"/>
+				<NumericVariable format="BEST." usage="quantitative" label="X" ref="bi26" varname="bi26" column="c9"/>
+				<NumericVariable format="BEST." usage="quantitative" label="Y" ref="bi27" varname="bi27" column="c10"/>
+				<StringVariable label="ID1" ref="bi46" varname="bi46" column="c11"/>
+				<StringVariable label="ID2" ref="bi51" varname="bi51" column="c12"/>
+				<NumericVariable format="COMMA20." usage="categorical" label="Disconnected Network ID" ref="bi80" varname="bi80" column="c13"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="2" colname="c0" encoding="text"/>
+				<StringColumn maxLength="2" colname="c1" encoding="text"/>
+				<StringColumn maxLength="2" colname="c2" encoding="text"/>
+				<StringColumn maxLength="2" colname="c3" encoding="text"/>
+				<StringColumn maxLength="2" colname="c4" encoding="text"/>
+				<StringColumn maxLength="2" colname="c5" encoding="text"/>
+				<StringColumn maxLength="2" colname="c6" encoding="text"/>
+				<StringColumn maxLength="2" colname="c7" encoding="text"/>
+				<StringColumn maxLength="2" colname="c8" encoding="text"/>
+				<NumericColumn dataType="double" colname="c9" encoding="text"/>
+				<NumericColumn dataType="double" colname="c10" encoding="text"/>
+				<StringColumn maxLength="2" colname="c11" encoding="text"/>
+				<StringColumn maxLength="2" colname="c12" encoding="text"/>
+				<NumericColumn dataType="double" colname="c13" encoding="text"/>
+			</Columns>
+			<Data isIndexed="true" availableRowCount="23" contentKey="QXOUNP6JC2LCIA22VZXYGGHJBL67UPNK" size="1269" format="CSV" rowCount="23" grandTotal="false" dataLayout="minimal"><![CDATA[37,36,5,1,1,1,-1,-1,-1,139.3816852384929,131.04023286449507,1,0,0
+37,36,12,9,9,9,-1,-1,-1,318.8331488884536,10.0,9,0,0
+37,36,18,16,16,16,-1,-1,-1,281.74703220309,304.4959056581069,16,44,1
+37,36,22,20,20,20,-1,-1,-1,530.8326913195983,252.34131731610955,20,44,1
+37,36,27,24,24,24,-1,-1,-1,33.00832026221735,395.5839343104825,24,0,2
+37,36,32,30,30,30,-1,-1,-1,389.6268583046342,474.26141648914546,30,38,3
+37,36,39,38,38,38,-1,-1,-1,272.1400061387988,530.8326913195983,38,-1,3
+37,36,41,40,40,40,-1,-1,-1,161.25332753159594,403.39012757825157,40,-1,2
+37,36,43,42,42,42,-1,-1,-1,14.611130988092292,291.8577573274914,42,-1,2
+37,36,45,44,44,44,-1,-1,-1,408.82932416276327,280.6569594373659,44,-1,1
+37,36,47,46,46,46,-1,-1,-1,10.0,125.00415635623963,46,-1,0
+37,36,49,48,48,48,-1,-1,-1,274.58829426338576,114.95034884022047,48,-1,0
+37,36,51,50,50,50,-1,-1,-1,247.56209168839203,89.01805815276114,50,-1,0
+35,34,6,2,2,2,5,47,15,.,.,-1,-1,.
+35,34,7,3,3,3,5,49,15,.,.,-1,-1,.
+35,34,8,4,4,4,5,51,15,.,.,-1,-1,.
+35,34,13,10,10,10,12,49,15,.,.,-1,-1,.
+35,34,14,11,11,11,12,51,15,.,.,-1,-1,.
+35,34,19,17,17,17,18,45,15,.,.,-1,-1,.
+35,34,23,21,21,21,22,45,15,.,.,-1,-1,.
+35,34,28,25,25,25,27,41,15,.,.,-1,-1,.
+35,34,29,26,26,26,27,43,15,.,.,-1,-1,.
+35,34,33,31,31,31,32,39,15,.,.,-1,-1,.
+]]></Data>
+			<StringTable contentKey="5MV25U3RZEMS4TAT4SJGMZ5BELYVSJOX" size="444" format="CSV" rowCount="52"><![CDATA["(multiple values)"
+"A"
+"A_X"
+"A_Y"
+"A_Z"
+"A(ID1)"
+"A(ID1)_X(ID1)"
+"A(ID1)_Y(ID1)"
+"A(ID1)_Z(ID1)"
+"B"
+"B_Y"
+"B_Z"
+"B(ID1)"
+"B(ID1)_Y(ID1)"
+"B(ID1)_Z(ID1)"
+"BOTH"
+"C"
+"C_W"
+"C(ID1)"
+"C(ID1)_W(ID1)"
+"D"
+"D_W"
+"D(ID1)"
+"D(ID1)_W(ID1)"
+"E"
+"E_U"
+"E_V"
+"E(ID1)"
+"E(ID1)_U(ID1)"
+"E(ID1)_V(ID1)"
+"F"
+"F_T"
+"F(ID1)"
+"F(ID1)_T(ID1)"
+"Link"
+"LINK"
+"Node"
+"NODE"
+"T"
+"T(ID1)"
+"U"
+"U(ID1)"
+"V"
+"V(ID1)"
+"W"
+"W(ID1)"
+"X"
+"X(ID1)"
+"Y"
+"Y(ID1)"
+"Z"
+"Z(ID1)"
+]]></StringTable>
+		</Result>
+	</Results>
+	<DataDefinitions>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd14">
+			<BusinessItems>
+				<SyntheticItems name="si18">
+					<Item purpose="dataTip" root="bi43" name="bi46"/>
+					<Item purpose="dataTip" root="bi50" name="bi51"/>
+					<Item purpose="disconnectedNetworkId" name="bi80"/>
+					<Item purpose="itemType" name="bi19"/>
+					<Item purpose="uniqueId" name="bi20"/>
+					<Item purpose="uniqueIdLabel" name="bi21"/>
+					<Item purpose="uniqueIdRaw" root="bi43" name="bi22"/>
+					<Item purpose="persistenceId" name="bi23"/>
+					<Item purpose="from" name="bi24"/>
+					<Item purpose="to" name="bi25"/>
+					<Item purpose="x" name="bi26"/>
+					<Item purpose="y" name="bi27"/>
+					<Item purpose="direction" name="bi28"/>
+					<Item purpose="directionLabel" name="bi29"/>
+					<Item purpose="itemTypeLabel" name="bi30"/>
+				</SyntheticItems>
+				<SyntheticItems name="si31">
+					<Item purpose="textSummary" name="bi32"/>
+				</SyntheticItems>
+				<RelationalDataItem name="bi43" base="bi8"/>
+				<RelationalDataItem name="bi50" base="bi9"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="procedural" name="dd15">
+				<ProceduralQuery type="networkDiagram" scoreCodeNumber="17">
+					<Arguments>
+						<Argument purpose="source">
+							<ReferenceValue>bi43</ReferenceValue>
+						</Argument>
+						<Argument purpose="target">
+							<ReferenceValue>bi50</ReferenceValue>
+						</Argument>
+						<Argument purpose="repulsiveForce">
+							<DoubleValue>0.01</DoubleValue>
+						</Argument>
+						<Argument purpose="farAway">
+							<DoubleValue>1.0</DoubleValue>
+						</Argument>
+						<Argument purpose="detailedLinkAttribute">
+							<BooleanValue>false</BooleanValue>
+						</Argument>
+						<Argument purpose="graphPartition">
+							<BooleanValue>true</BooleanValue>
+						</Argument>
+						<Argument purpose="maxNodeCount">
+							<IntValue>100</IntValue>
+						</Argument>
+						<Argument purpose="communityCount">
+							<IntValue>5</IntValue>
+						</Argument>
+						<Argument purpose="useGeographicLocation">
+							<BooleanValue>false</BooleanValue>
+						</Argument>
+					</Arguments>
+				</ProceduralQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" name="dd16" syntheticItems="si18"/>
+					<ResultDefinition purpose="textSummary" name="dd33" syntheticItems="si31"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd56">
+			<BusinessItems>
+				<RelationalDataItem name="bi59" base="bi8"/>
+				<RelationalDataItem name="bi60" base="bi9"/>
+				<RelationalFilterItem name="bi62">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>notMissing(${bi60,binned})</Expression>
+				</RelationalFilterItem>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="relational" name="dd57">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi59"/>
+							<BusinessItem ref="bi60"/>
+						</Axis>
+					</Axes>
+					<SortItems>
+						<SortItem ref="bi59" sortDirection="ascending"/>
+					</SortItems>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="listTable" maxRowsBehavior="truncate" name="dd58"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters>
+				<DetailFilters>
+					<BusinessItem ref="bi62"/>
+				</DetailFilters>
+			</AppliedFilters>
+		</ParentDataDefinition>
+	</DataDefinitions>
+	<DataSources>
+		<DataSource label="HAVE" type="relational" name="ds7">
+			<CasResource server="cas-shared-default" library="CASUSER" table="HAVE" locale="en_US"/>
+			<BusinessItemFolder>
+				<DataItem name="bi8" xref="ID1"/>
+				<DataItem name="bi9" xref="ID2"/>
+				<PredefinedDataItem calculation="totalCount" name="bi10" label="Frequency" usage="quantitative" format="COMMA12."/>
+				<PredefinedDataItem calculation="totalCountPercent" name="bi11" label="Frequency Percent" usage="quantitative" format="PERCENT20.2"/>
+			</BusinessItemFolder>
+		</DataSource>
+	</DataSources>
+	<VisualElements>
+		<Graph graphType="network" graphSubType="networkDirected" supplementalVisuals="ve36 ve49" resultDefinitions="dd16" name="ve13" data="dd14" label="Network analysis - ID1 1" applyDynamicBrushes="no" sourceInteractionVariables="bi22">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+				<Property key="derivedVisualType">true</Property>
+			</EditorProperties>
+<![CDATA[<StatGraph opaque="false" includeMissingDiscrete="true" missingValueDisplay="autolabel" displayOptionPolicy="union">
+    <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
+    <Meta>
+        <DataNameMap>
+            <Entry model="LayoutOverlayMap" data="dd16"/>
+        </DataNameMap>
+    </Meta>
+    <LayoutOverlayMap name="LayoutOverlayMap">
+        <NetworkPlot name="NetworkPlot" compactLabelFormats="true" display="NODEOUTLINE NODEFILL" tip="none" fromId="dd16#bi24" linkId="dd16#bi20" nodeGroup="dd16#bi80" nodeId="dd16#bi20" nodeLabel="dd16#bi21" nodeLabelPriority_type="NUMERIC" nodeLabelPriority="1" nodeX="dd16#bi26" nodeY="dd16#bi27" toId="dd16#bi25" type="dd16#bi19" x="dd16#bi26" y="dd16#bi27">
+            <LinkTip>
+                <Value>dd16#bi21</Value>
+                <Value>dd16#bi24</Value>
+                <Value>dd16#bi25</Value>
+            </LinkTip>
+            <NodeTip>
+                <Value>dd16#bi46</Value>
+                <Value>dd16#bi51</Value>
+                <Value>dd16#bi21</Value>
+                <Value>dd16#bi80</Value>
+            </NodeTip>
+            <NodeLabelAttrs size="10.5pt" weight="bold"/>
+        </NetworkPlot>
+    </LayoutOverlayMap>
+    <LayoutGlobalLegend border="false" legendTitlePosition="top" allowCollapsed="true">
+        <SizeLegend opaque="false" hAlign="left" vAlign="bottom" orient="horizontal" extractScale="true" type="shape" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>NetworkPlot</Value>
+            </GraphNames>
+        </SizeLegend>
+        <DiscreteLegend border="false" opaque="false" hAlign="left" vAlign="bottom" sortOrder="ascending" type="fill_color" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>NetworkPlot</Value>
+            </GraphNames>
+        </DiscreteLegend>
+        <ContinuousLegend opaque="false" vAlign="bottom" valueStyle="inflections" displayMissing="automatic" extractScale="true" type="fillcolor" title_type="KEYWORD" title="AUTO">
+            <PadAttrs top="2px" bottom="2px" left="2px" right="2px"/>
+            <GraphNames>
+                <Value>NetworkPlot</Value>
+            </GraphNames>
+        </ContinuousLegend>
+        <SizeLegend opaque="false" hAlign="left" vAlign="bottom" orient="horizontal" extractScale="true" type="line" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>NetworkPlot</Value>
+            </GraphNames>
+        </SizeLegend>
+        <DiscreteLegend border="false" opaque="false" hAlign="left" vAlign="bottom" sortOrder="ascending" type="line_color" title_type="KEYWORD" title="AUTO">
+            <GraphNames>
+                <Value>NetworkPlot</Value>
+            </GraphNames>
+        </DiscreteLegend>
+        <ContinuousLegend opaque="false" vAlign="bottom" valueStyle="inflections" displayMissing="automatic" extractScale="true" type="linecolor" title_type="KEYWORD" title="AUTO">
+            <PadAttrs top="2px" bottom="2px" left="2px" right="2px"/>
+            <GraphNames>
+                <Value>NetworkPlot</Value>
+            </GraphNames>
+        </ContinuousLegend>
+    </LayoutGlobalLegend>
+</StatGraph>
+]]>
+		</Graph>
+		<Table columnSizing="autoFill" resultDefinitions="dd16" name="ve36" data="dd14" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi30"/>
+				<Column variable="bi20"/>
+				<Column variable="bi24"/>
+				<Column variable="bi25"/>
+				<Column variable="bi80"/>
+				<Column variable="bi46"/>
+				<Column variable="bi51"/>
+			</Columns>
+		</Table>
+		<Table columnSizing="autoFill" resultDefinitions="dd33" name="ve49" data="dd14" applyDynamicBrushes="yes">
+			<Columns>
+				<Column variable="bi32"/>
+			</Columns>
+		</Table>
+		<VisualContainer containerType="layout" name="ve53" label="Layout Container 1" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="visualType">LAYOUT_CONTAINER</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Table columnSizing="autoFill" resultDefinitions="dd58" name="ve55" data="dd56" label="List table - ID1 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi59 bi60">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Columns>
+				<Column variable="bi59" isVisible="true"/>
+				<Column variable="bi60" isVisible="true"/>
+			</Columns>
+		</Table>
+		<Text name="ve66" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
+			<P><Span class="span1">Creating groups from Network Analysis</Span><Span>: This dashboard uses Network Analysis to visualize the groups that we want to create with the data shown to the right.  Here are our rules:</Span></P>
+			<P></P>
+			<P><Span>1️⃣ All rows with the same ID1 should have the same value of Group.</Span></P>
+			<P><Span>2️⃣ All rows with the same ID2 should have the same value of Group.</Span></P>
+			<P><Span>3️⃣ The two above conditions have to be combined. e.g. if A-&gt;Z and also B-&gt;Z, then all rows with ID1 = A or ID1 = B should have the same value of Group, since they share at least one ID2. Conversely, all rows with ID2 = Y or ID2 = X should have the same value of Group, since they share at least one ID1.</Span></P>
+			<P></P>
+			<P><Span>By reframing this problem as an undirected network, we can use PROC OPTNETWORK or PROC OPTNET to identify each unique group. Check out the links below for more information about this problem and how to solve it.</Span></P>
+			<P></P>
+			<P><Span>For more information, see: </Span><Span action="ac72" class="span2">https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire</Span></P>
+			<P><Span>Code: </Span><Span action="ac73">https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas</Span></P>
+		</Text>
+		<VisualContainer containerType="layout" name="ve71" label="Layout Container 3" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="visualType">LAYOUT_CONTAINER</Property>
+			</EditorProperties>
+		</VisualContainer>
+	</VisualElements>
+	<View>
+		<Section name="vi6" label="Page 1">
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Container ref="ve53" name="vi52">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+						<ResponsiveLayout orientation="vertical" overflow="grow"/>
+						<Container ref="ve71" name="vi70">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+							<ResponsiveLayout orientation="vertical" overflow="grow">
+								<Weights mediaTarget="mt5" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt4" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt3" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+							</ResponsiveLayout>
+							<Visual ref="ve66" name="vi65">
+								<ResponsiveConstraint>
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+									</HeightConstraint>
+								</ResponsiveConstraint>
+							</Visual>
+							<Visual ref="ve13" name="vi12">
+								<ResponsiveConstraint>
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									</HeightConstraint>
+								</ResponsiveConstraint>
+							</Visual>
+						</Container>
+						<Visual ref="ve55" name="vi54">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="28.96%" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+						</Visual>
+					</Container>
+				</MediaContainer>
+			</Body>
+		</Section>
+	</View>
+	<Actions>
+		<NavigationAction type="url" value="https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire" label="https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire" name="ac72"/>
+		<NavigationAction type="url" value="https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas" label="https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas" name="ac73"/>
+	</Actions>
+	<Interactions>
+		<Interaction name="ia76" type="brush" derived="false">
+			<InteractionElementReference purpose="source" ref="ve13" variable="bi22"/>
+			<InteractionElementReference purpose="target" ref="ve55" variable="bi59"/>
+		</Interaction>
+	</Interactions>
+	<MediaSchemes>
+		<MediaScheme name="ms1">
+			<BaseStylesheetResource file="basems1.css" theme="light2025"/>
+			<StylesheetFile file="ms1.css"/>
+		</MediaScheme>
+	</MediaSchemes>
+	<MediaTargets>
+		<MediaTarget windowSize="default" scheme="ms1" name="mt2"/>
+		<MediaTarget windowSize="small" scheme="ms1" name="mt3"/>
+		<MediaTarget windowSize="medium" scheme="ms1" name="mt4"/>
+		<MediaTarget windowSize="large" scheme="ms1" name="mt5"/>
+	</MediaTargets>
+	<Properties>
+		<Property key="displayDataSource">ds7</Property>
+		<Property key="ReportPackagesServiceVersion">Viya4 2025.11</Property>
+		<Property key="ReportDataServiceVersion">Viya4 2025.11</Property>
+	</Properties>
+	<ExportProperties>
+		<Export destination="pdf">
+			<Property key="showCoverPage" value="true"></Property>
+			<Property key="showPageNumbers" value="true"></Property>
+		</Export>
+	</ExportProperties>
+	<SASReportState>
+		<View/>
+	</SASReportState>
+</SASReport>

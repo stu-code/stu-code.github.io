@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.58.0" label="Report 1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.58.0" dateCreated="2025-11-18T18:57:37Z" dateModified="2025-11-18T18:57:37Z" createdApplication="SAS Visual Analytics" nextUniqueNameIndex="52">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.58.0" label="Report 1" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.58.0" dateCreated="2025-11-18T19:14:25Z" dateModified="2025-11-18T19:14:25Z" createdApplication="SAS Visual Analytics" nextUniqueNameIndex="74">
 	<Results>
 		<Result ref="dd33" type="relational" status="success" dataLevel="baseline" label="Network Analysis Summary" dataLocale="en_US" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
 			<Variables>
@@ -122,6 +122,44 @@
 "Z(ID1)"
 ]]></StringTable>
 		</Result>
+		<Result ref="dd58" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-11-18T18:21:31.826Z">
+			<Variables>
+				<StringVariable label="ID1" ref="bi59" varname="bi59" column="c0"/>
+				<StringVariable label="ID2" ref="bi60" varname="bi60" column="c1"/>
+			</Variables>
+			<Columns>
+				<StringColumn maxLength="1" colname="c0" encoding="text"/>
+				<StringColumn maxLength="2" colname="c1" encoding="text"/>
+			</Columns>
+			<DefinedSortItems>
+				<DefinedSortItem variable="bi59" sortDirection="ascending"/>
+			</DefinedSortItems>
+			<Data isIndexed="true" availableRowCount="10" contentKey="MTWAN6A5DH3O76J2LRWFA6NNPB6DAOXM" size="45" format="CSV" rowCount="10" grandTotal="false" dataLayout="minimal"><![CDATA[0,10
+0,11
+0,12
+1,11
+1,12
+2,9
+3,9
+4,7
+4,8
+5,6
+]]></Data>
+			<StringTable contentKey="DZ2GNGKJIL5DWBIKG6544QC5EIIGZ6JE" size="52" format="CSV" rowCount="13"><![CDATA["A"
+"B"
+"C"
+"D"
+"E"
+"F"
+"T"
+"U"
+"V"
+"W"
+"X"
+"Y"
+"Z"
+]]></StringTable>
+		</Result>
 	</Results>
 	<DataDefinitions>
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd14">
@@ -186,6 +224,40 @@
 					<ResultDefinition purpose="textSummary" name="dd33" syntheticItems="si31"/>
 				</ResultDefinitions>
 			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd56">
+			<BusinessItems>
+				<RelationalDataItem name="bi59" base="bi8"/>
+				<RelationalDataItem name="bi60" base="bi9"/>
+				<RelationalFilterItem name="bi62">
+					<EditorProperties>
+						<Property key="complexity">SINGLE_DATA_ITEM</Property>
+						<Property key="interactiveEditingAllowed">TRUE</Property>
+					</EditorProperties>
+					<Expression>notMissing(${bi60,binned})</Expression>
+				</RelationalFilterItem>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="relational" name="dd57">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi59"/>
+							<BusinessItem ref="bi60"/>
+						</Axis>
+					</Axes>
+					<SortItems>
+						<SortItem ref="bi59" sortDirection="ascending"/>
+					</SortItems>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRowsLookup="listTable" maxRowsBehavior="truncate" name="dd58"/>
+				</ResultDefinitions>
+			</DataDefinition>
+			<AppliedFilters>
+				<DetailFilters>
+					<BusinessItem ref="bi62"/>
+				</DetailFilters>
+			</AppliedFilters>
 		</ParentDataDefinition>
 	</DataDefinitions>
 	<DataSources>
@@ -282,6 +354,31 @@
 				<Column variable="bi32"/>
 			</Columns>
 		</Table>
+		<VisualContainer containerType="layout" name="ve53" label="Layout Container 1" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="visualType">LAYOUT_CONTAINER</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Table columnSizing="autoFill" resultDefinitions="dd58" name="ve55" data="dd56" label="List table - ID1 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi59 bi60">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Columns>
+				<Column variable="bi59" isVisible="true"/>
+				<Column variable="bi60" isVisible="true"/>
+			</Columns>
+		</Table>
+		<VisualContainer containerType="layout" name="ve71" label="Layout Container 3" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="visualType">LAYOUT_CONTAINER</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Text name="ve66" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
+			<P><Span class="span1">Creating groups from Network Analysis</Span><Span>: This dashboard uses Network Analysis to visualize the groups that we want to create with the data shown to the right. By reframing this problem as an undirected network, we can use PROC OPTNETWORK or PROC OPTNET to identify each unique group. Check out the links below for more information about this problem and how to solve it.</Span></P>
+			<P></P>
+			<P><Span>For more information, see: </Span><Span action="ac72" class="span2">https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire</Span></P>
+			<P><Span>Code: </Span><Span action="ac73">https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas</Span></P>
+		</Text>
 	</VisualElements>
 	<View>
 		<Section name="vi6" label="Page 1">
@@ -298,20 +395,76 @@
 							<Weight value="100%"/>
 						</Weights>
 					</ResponsiveLayout>
-					<Visual ref="ve13" name="vi12">
+					<Container ref="ve53" name="vi52">
 						<ResponsiveConstraint>
 							<WidthConstraint>
-								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
 							</WidthConstraint>
 							<HeightConstraint>
-								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
 							</HeightConstraint>
 						</ResponsiveConstraint>
-					</Visual>
+						<ResponsiveLayout orientation="vertical" overflow="grow"/>
+						<Container ref="ve71" name="vi70">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+							<ResponsiveLayout orientation="vertical" overflow="grow">
+								<Weights mediaTarget="mt5" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt4" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt3" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+							</ResponsiveLayout>
+							<Visual ref="ve66" name="vi65">
+								<ResponsiveConstraint>
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+									</HeightConstraint>
+								</ResponsiveConstraint>
+							</Visual>
+							<Visual ref="ve13" name="vi12">
+								<ResponsiveConstraint>
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+									</HeightConstraint>
+								</ResponsiveConstraint>
+							</Visual>
+						</Container>
+						<Visual ref="ve55" name="vi54">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="28.96%" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+						</Visual>
+					</Container>
 				</MediaContainer>
 			</Body>
 		</Section>
 	</View>
+	<Actions>
+		<NavigationAction type="url" value="https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire" label="https://www.linkedin.com/posts/statsguy_sastiptuesday-sas-sql-share-7396623344260882432-Bire" name="ac72"/>
+		<NavigationAction type="url" value="https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas" label="https://github.com/stu-code/sas-tips/blob/main/network_analysis_grouping.sas" name="ac73"/>
+	</Actions>
 	<MediaSchemes>
 		<MediaScheme name="ms1">
 			<BaseStylesheetResource file="basems1.css" theme="light2025"/>
